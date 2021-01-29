@@ -8,10 +8,10 @@ $(() => {
   $p = $('p');
 
   // Get all words of p
-  $words = $p.text().trim().split(' ');
+  $words = $p.html().trim().split(' ');
 
   // Clean <p>
-  $p.text(' ');
+  $p.html(' ');
 
   // Insert all words again but surrounded by some cool spans
   for (const word of $words) {
